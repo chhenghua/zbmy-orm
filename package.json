@@ -1,6 +1,6 @@
 {
   "name": "zbmy-orm",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "ORM",
   "main": "index.js",
   "scripts": {
@@ -9,5 +9,8 @@
   "author": "jd",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.11.1",
+    "mongoose": "^4.4.12",
+    "sequelize": "^3.21.0"
   }
 }
