@@ -1,10 +1,10 @@
-###中北明夷ORM
+### 中北明夷ORM
 ---
-#####安装
+##### 安装
 ```sh
 npm install zbmy-orm
 ```
-#####初始化db，这里区分读写库。
+##### 初始化db，这里区分读写库。
 ```js
 var writeConfig = {
     database: 'dbName',
@@ -16,7 +16,7 @@ var writeConfig = {
 var orm = require('zbmy-orm');
 orm.init('mysql','read', writeConfig);//P1为自定义名称，P2为读写类型（read，write，all），P3为数据库参数配置，基本参照sequelize的标准，需要注意modelPath参数；
 ```
-#####model定义
+##### model定义
 ```js
 "use strict"
 var Sequelize = require('sequelize');
@@ -40,7 +40,7 @@ module.exports = function(sequelize){
     return Company;
 }
 ```
-#####业务逻辑
+##### 业务逻辑
 ```js
 //findAll方法
 orm('gamer').findAll({where:{_id:"xxx"}}, function(err, result){
@@ -65,29 +65,29 @@ orm('gamer').invokeSQL({sql: "xxx", options: {}}, function(err, result){
 });
 
 ```
-#####API 支持
+##### API 支持
 * read方法:
-find
-findOrCountAll
-count
-max
-min
-sum
+    find
+    findOrCountAll
+    count
+    max
+    min
+    sum
 * write方法:
-findOrCreate
-create
-update
-remove
-increment
-decrement
-bulkCreate
-transaction
-invokeSQL
+    findOrCreate
+    create
+    update
+    remove
+    increment
+    decrement
+    bulkCreate
+    transaction
+    invokeSQL
 * read in write for transaction and sql
-w_findAll
-w_findOrCountAll
-w_count
-w_max
-w_min
-w_sum
+    w_findAll
+    w_findOrCountAll
+    w_count
+    w_max
+    w_min
+    w_sum
 
