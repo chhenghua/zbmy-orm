@@ -1,4 +1,4 @@
-### 中北明夷ORM
+## 中北明夷ORM
 ---
 ##### 安装
 ```sh
@@ -65,51 +65,30 @@ orm('gamer').invokeSQL({sql: "xxx", options: {}}, function(err, result){
 });
 
 ```
+
 ##### API 支持
-* read方法:
-
-    find
-    
-    findOrCountAll
-    
-    count
-    
-    max
-    
-    min
-    
-    sum
-    
-* write方法:
-
-    findOrCreate
-
-    create
-    
-    update
-    
-    remove
-    
-    increment
-    
-    decrement
-    
-    bulkCreate
-    
-    transaction
-    
-    invokeSQL
-* read in write for transaction and sql
-
-    w_findAll
-    
-    w_findOrCountAll
-
-    w_count
-    
-    w_max
-    
-    w_min
-    
-    w_sum
+* read方法:  
+    find  
+    findOrCountAll  
+    count  
+    max  
+    min  
+    sum  
+* write方法:  
+    findOrCreate  
+    create  
+    update  
+    remove  
+    increment  
+    decrement  
+    bulkCreate  
+    transaction  
+    invokeSQL  
+* read in write for transaction and sql  
+    w_findAll  
+    w_findOrCountAll  
+    w_count  
+    w_max  
+    w_min  
+    w_sum  
 
