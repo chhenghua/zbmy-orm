@@ -12,5 +12,13 @@
     "lodash": "^4.11.1",
     "mongoose": "^4.4.12",
     "sequelize": "^3.21.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
