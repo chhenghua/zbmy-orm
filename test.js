@@ -115,11 +115,18 @@ var memConfig = {
 
 S.init('memcache', 'all', memConfig);
 
-S('userInfo').create({name:'wgj', age:27}, function(err, result) {
-    console.log('memcache result:::::::::::::::::::::::::::::');
-    console.log(err);
-    console.log(result);
-});
+
+setTimeout(function() {
+    S('userInfo').create({name:'wgj', age:27}, function(err, result) {
+        console.log('memcache result:::::::::::::::::::::::::::::');
+        console.log(err);
+        console.log(result);
+    });
+}, 3000);
+
+
+
+
 
 
 
