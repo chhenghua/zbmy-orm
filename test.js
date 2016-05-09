@@ -118,16 +118,28 @@ S.init('memcache', 'all', memConfig);
 
 setTimeout(function() {
     S('userInfo').create({name:'wgj', age:27}, function(err, result) {
-        console.log('memcache result:::::::::::::::::::::::::::::');
+        console.log('memcache create result:::::::::::::::::::::::::::::');
+        console.log(err);
+        console.log(result);
+    });
+}, 1000);
+
+setTimeout(function () {
+    S('userInfo').findAll({name:'wgj'}, function(err, result) {
+        console.log('memcache findAll result:::::::::::::::::::::::::::::');
         console.log(err);
         console.log(result);
     });
 }, 3000);
 
 
-
-
-
+setTimeout(function () {
+    S('userInfo').increment({name:'wgj'}, 'age', {by: 3}, function(err, result) {
+        console.log('memcache increment result:::::::::::::::::::::::::::::');
+        console.log(err);
+        console.log(result);
+    });
+}, 5000);
 
 
 
