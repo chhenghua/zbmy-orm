@@ -125,7 +125,7 @@ setTimeout(function() {
 }, 1000);
 
 setTimeout(function () {
-    S('userInfo').findAll({name:'wgj'}, function(err, result) {
+    S('userInfo').findAll('userInfo_name_wgj', function(err, result) {
         console.log('memcache findAll result:::::::::::::::::::::::::::::');
         console.log(err);
         console.log(result);
