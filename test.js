@@ -152,7 +152,7 @@ setTimeout(function () {
 
 
 setTimeout(function () {
-    S('userInfo').remove({name:'wgj'}, function(err, result) {
+    S('userInfo').remove({name:'wgj'}, function(err) {
         console.log('memcache remove result:::::::::::::::::::::::::::::');
         console.log(err);
         console.log(result);
