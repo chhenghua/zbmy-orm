@@ -142,4 +142,25 @@ setTimeout(function () {
 }, 5000);
 
 
+setTimeout(function () {
+    S('userInfo').update({name:'wgj'}, {age: 100}, function(err, result) {
+        console.log('memcache update result:::::::::::::::::::::::::::::');
+        console.log(err);
+        console.log(result);
+    });
+}, 7000);
 
+
+setTimeout(function () {
+    S('userInfo').remove({name:'wgj'}, function(err, result) {
+        console.log('memcache remove result:::::::::::::::::::::::::::::');
+        console.log(err);
+        console.log(result);
+
+        S('userInfo').findAll({name: 'wgj'}, function(err1, result1) {
+            console.log('memcache remove  findAll result:::::::::::::::::::::::::::::');
+            console.log(err1);
+            console.log(result1);
+        });
+    });
+}, 10000);
