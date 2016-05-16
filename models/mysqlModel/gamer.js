@@ -10,6 +10,10 @@ module.exports = function(sequelize){
         },
         openid: {
             type: Sequelize.STRING
+        },
+        version: {
+            type: Sequelize.INTEGER,
+            defaultValue: 0
         }
     },{
         freezeTableName: true,
