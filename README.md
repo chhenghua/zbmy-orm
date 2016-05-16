@@ -69,7 +69,7 @@ orm('gamer').invokeSQL({sql: "xxx", options: {}}, function(err, result){
 ##### API 支持
 * read方法:  
     find  
-    findOrCountAll  
+    findOrCount
     count  
     max  
     min  
@@ -86,7 +86,7 @@ orm('gamer').invokeSQL({sql: "xxx", options: {}}, function(err, result){
     invokeSQL  
 * read in write for transaction and sql  
     w_findAll  
-    w_findOrCountAll  
+    w_findOrCount
     w_count  
     w_max  
     w_min  
