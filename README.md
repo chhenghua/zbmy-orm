@@ -78,7 +78,7 @@ orm('gamer').invokeSQL({sql: "xxx", options: {}}, function(err, result){
     findOrCreate  
     create  
     update  
-    remove  
+    destroy
     increment  
     decrement  
     bulkCreate  
