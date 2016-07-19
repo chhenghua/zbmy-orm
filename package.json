@@ -1,6 +1,6 @@
 {
   "name": "zbmy-orm",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "ORM",
   "main": "index.js",
   "scripts": {
