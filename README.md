@@ -5,12 +5,16 @@
 npm install zbmy-orm
 ```
 ##### 初始化db，这里区分读写库。
+### 添加oracle支持，配置文件添加dialect = "oracle"
 ```js
 var writeConfig = {
+    dialect: "oracle",
     database: 'dbName',
     username: "xxx",
     password: "xxx",
-    ......
+    option: {
+        dialect: "oracle"
+    },
     modelPath: path.join(__dirname, 'models') //这里标识model数据模板存储位置，绝对路径。
 };
 var orm = require('zbmy-orm');

@@ -9,6 +9,7 @@
   "author": "jd",
   "license": "ISC",
   "dependencies": {
+    "cu8-sequelize-oracle": "^1.0.5",
     "lodash": "^4.11.1",
     "mongoose": "^4.4.12",
     "node_memcached": "^1.1.3",
